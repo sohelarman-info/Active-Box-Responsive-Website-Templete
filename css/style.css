@@ -266,14 +266,8 @@ transition: all linear 0.3s;
 }
 .slick-dots {
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 75%);
-}
-.slick-dots{
-	position: absolute;
-	top: 0;
-	left: 0;
+    top: 91%;
+    left: 25%;
 }
 .slick-dots li button:before {
     font-family: 'slick';
@@ -324,6 +318,12 @@ transition: all linear 0.3s;
     border-radius: 3px;
     margin-top: 30px;
 	font-weight: 500;
+	cursor: pointer;
+}
+.download a:hover {
+    background-color: #fc0000;
+    color: #ffffff;
+	cursor: pointer;
 }
 /* download part css end */
 
