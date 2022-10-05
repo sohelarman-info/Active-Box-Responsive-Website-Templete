@@ -1,0 +1,393 @@
+/*!
+Theme Name: Active Box
+Theme URI: https://activebox.lamcoder.com
+Author: Sohel Arman
+Author URI: https://bosathemes.com
+Description: Professional Web Developer. Author by Lamcoder
+Version: 8.1.0
+Requires PHP: 5.5
+Tested up to: 1.0
+License: lamcoder
+License URI: https://lamcoder.com
+Template: Active Box
+Text Domain: Custom Domain
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Open+Sans&family=Raleway&display=swap');
+/* 
+font-family: 'Cardo', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+*{padding: 0; margin: 0; outline: 0}
+a{text-decoration: none}
+ul,ol{list-style: none}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: "Raleway";
+}
+
+/* header part css start */
+#header{
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.header_overlay{
+	width: 100%;
+	height: 100%;
+	background-color: #2d304bfa;
+}
+.navbar{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	padding: 15px 0;
+}
+.navbar.fixed{
+	background-color: #292c47;
+}
+.navbar .header-content {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 40px 0;
+    width: 100%;
+    -moz-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    -webkit-transition: padding 0.3s;
+    transition: padding 0.3s;
+}
+
+
+
+.nav-link{
+	color: #ffffff;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.nav-link:hover{
+	color: #e84545;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #e84545;
+}
+.banner_content{
+	text-align: center;
+	margin-bottom: 200px;
+}
+.banner_content h2 {
+    color: #ffffff;
+    font-family: "Open Sans";
+	font-weight: bold;
+	text-transform: uppercase;
+    font-size: 65px;
+    margin-top: 200px;
+	margin-bottom: 50px;
+}
+.banner_content p{
+	color: #ffffff;
+	font-size: 22px;
+	margin-bottom: 80px;
+}
+.banner_content a {
+    background-color: #e84545;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    border-radius: 5px;
+}
+/* header part css end */
+
+/* service section css start */
+#service{
+	background-color: #ffffff;
+	margin: 100px 0;
+}
+.service_item{
+	text-align: center;
+	margin-top: 50px;
+}
+.service_icon i{
+	color: #E84545;
+	font-size: 70px;
+	margin-bottom: 30px;
+}
+.service_item h4{
+	font-size: 14px;
+	color: #2d3033;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.service_item p{
+	font-size: 14px;
+	color: #6c7279;
+}
+/* service section css end */
+
+
+/* portfolio section css start */
+#portfolio{
+	margin-bottom: 100px;
+}
+.portfolio_item{
+	position: relative;
+}
+.portfolio_item:hover .portfolio-overlay{
+	transform: scale(1);
+	transition: all linear 0.3s;
+}
+.portfolio_item img{
+	width: 100%;
+	height: 360px;
+}
+.portfolio-overlay{
+transform: scale(0);
+width: 100%;
+height: 100%;
+background-color: #da4747e3;
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+transition: all linear 0.3s;
+}
+.portfolio-overlay h4{
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+}
+.portfolio-overlay p{
+	font-size: 14px;
+	text-transform: capitalize;
+	color: #ffffff;
+}
+/* portfolio section css end */
+
+/* mentor section css start */
+#mentor{}
+.mentor{}
+.mentor_item{}
+.mentor_item img{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 30px;
+}
+.mentor_item h2{
+	color: #2d3033;
+	font-size: 22px;
+	text-transform: capitalize;
+}
+.mentor_item h6{
+	color: #e84545;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.mentor_item p {
+    color: #6c7279;
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+.mentor_social{
+	display: flex;
+
+}
+.mentor_social a{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #c6cacc;
+	border: 1px solid #c6cacc;
+	font-size: 22px;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all linear 0.3s;
+}
+.mentor_social a:hover{
+	background-color: #e84545;
+	border: 1px solid #e84545;
+	color: #ffffff;
+	transition: all linear 0.3s;
+}
+/* mentor section css end */
+
+/* testimonial css start */
+#testimonials{
+	margin: 100px 0;
+}
+.testimonial_img img{
+	width: 100%;
+}
+.testimonial_qoute{
+	width: 100%;
+	height: 100%;
+	background-color: #53354a;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+	position: relative;
+}
+.testimonial_qoute blockquote {
+    border: 0;
+    margin: 0;
+    padding: 0 15% 0;
+}
+.testimonial_qoute blockquote p{
+	font-family: "Cardo";
+	font-style: italic;
+	font-size: 36px;
+}
+.author {
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.slick-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 75%);
+}
+.slick-dots{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 60px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white;
+}
+/* testimonial css end */
+
+
+/* download part css start */
+.download {
+    margin: 100px 0;
+    text-align: center;
+}
+.download h2{
+	color: #2d3033;
+	font-size: 28px;
+}
+.download h6{
+	color: #2d3033;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.download a {
+    background-color: #e84545;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 8px 27px;
+    border-radius: 3px;
+    margin-top: 30px;
+	font-weight: 500;
+}
+/* download part css end */
+
+
+/* footer section css start */
+.footer {
+    text-align: center;
+}
+.footer-top {
+    background-color: #3a3e64;
+    padding-top: 50px;
+}
+.footer .footer-col {
+    margin-bottom: 80px;
+	text-align: center;
+}
+.footer h5 {
+    margin-bottom: 20px;
+	color: #ffffff;font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.footer p {
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-share li a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 2px solid #c6cacc;
+    font-size: 22px;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all linear 0.3s;
+}
+ol, ul {
+    padding-left: 0;
+}
+.footer-share li a:hover {
+    background-color: #e84545;
+    border: 1px solid #e84545;
+    color: #ffffff;
+    transition: all linear 0.3s;
+}
+.footer .footer-share li {
+    display: inline-block;
+    float: none;
+}
+.footer-bottom {
+    background-color: #313454;
+    padding: 20px 0;
+}
+.footer p {
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer .fa-heart {
+    color: #e84545;
+    font-size: 11px;
+    margin: 0 2px;
+}
+.footer a {
+    color: #fff;
+}
+/* footer section css end */
