@@ -31,8 +31,9 @@
     
     .slick-dots {
         position: absolute;
-        top: 91%;
-        left: 0px;
+        bottom: 5%;
+        right: 35%;
+        width: 30%;
     }
  }
 
@@ -69,8 +70,9 @@
     
     .slick-dots {
         position: absolute;
-        top: 91%;
-        left: 0px;
+        bottom: 5%;
+        right: 35%;
+        width: 30%;
     }
 
 
@@ -111,8 +113,9 @@
     
     .slick-dots {
         position: absolute;
-        top: 91%;
-        left: 0px;
+        bottom: 5%;
+        right: 35%;
+        width: 30%;
     }
  }
 

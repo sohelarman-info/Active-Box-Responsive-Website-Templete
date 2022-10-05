@@ -266,8 +266,9 @@ transition: all linear 0.3s;
 }
 .slick-dots {
     position: absolute;
-    top: 91%;
-    left: 25%;
+    bottom: 13%;
+    right: 18%;
+    width: 15%;
 }
 .slick-dots li button:before {
     font-family: 'slick';
